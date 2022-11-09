@@ -10,4 +10,8 @@
       <DocumentationFile>bin\Debug\ConfigsClassXmlDocToJsonComments.xml</DocumentationFile>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Namotion.Reflection" Version="2.1.1" />
+    </ItemGroup>
+
 </Project>
