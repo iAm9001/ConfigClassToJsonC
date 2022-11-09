@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\ConfigsClassXmlDocToJsonComments.xml</DocumentationFile>
+    </PropertyGroup>
+
 </Project>
