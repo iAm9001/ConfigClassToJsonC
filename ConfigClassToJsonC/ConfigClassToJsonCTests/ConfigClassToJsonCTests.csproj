@@ -6,10 +6,18 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
+
+        <Configurations>Debug;Release;Release-Sign</Configurations>
+
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         <DocumentationFile>bin\Debug\ConfigClassToJsonCTests.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release-Sign' ">
+        <Optimize Condition=" '$(Optimize)' == '' ">true</Optimize>
     </PropertyGroup>
 
     <ItemGroup>
