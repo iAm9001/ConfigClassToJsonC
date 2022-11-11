@@ -6,7 +6,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>ConfigClassToJsonC</Title>
         <Authors>iAm9001</Authors>
-        <Description>library can be used to take any C# class (but specifically with configuration style classes in mind) and export it to a JSON string, along with it's XmlDoc output to the JSON file along with it. This is useful for creating ad-hoc documentation for your config files for when other people need to make modifications to them.</Description>
+        <Description>A library can be used to take any C# class (but specifically with configuration style classes in mind) and export it to a JSON string, along with it's XmlDoc output to the JSON file along with it. This is useful for creating ad-hoc documentation for your config files for when other people need to make modifications to them.</Description>
         <Copyright>(C)2022 iAm9001</Copyright>
         <PackageProjectUrl>https://github.com/iAm9001/ConfigClassToJsonC</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
