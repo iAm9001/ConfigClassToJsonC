@@ -19,21 +19,27 @@
         <ApplicationIcon>CC2JSONC-transparent.ico</ApplicationIcon>
         <IncludeBuildOutput>false</IncludeBuildOutput>
         <DevelopmentDependency>true</DevelopmentDependency>
+        <Configurations>Debug;Release;Release-Sign</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <DocumentationFile>bin\Debug\ConfigClassToJsonC.xml</DocumentationFile>
+        <DocumentationFile>bin\Debug\ConfigClassToJsonC.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release-Sign' ">
+        <Optimize Condition=" '$(Optimize)' == '' ">true</Optimize>
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="CC2JSONC-transparent.ico" />
+        <Content Include="CC2JSONC-transparent.ico"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="GitVersion.MsBuild" Version="5.11.1">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
+        <PackageReference Include="GitVersion.MsBuild" Version="5.11.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
       <PackageReference Include="Namotion.Reflection" Version="2.1.1" />
       <PackageReference Include="System.Text.Json" Version="7.0.0" />
     </ItemGroup>
