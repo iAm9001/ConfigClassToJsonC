@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
@@ -16,7 +16,12 @@
         <PackageReleaseNotes>This is the first release, and may be the only release. There is a formatting issue inherint to the System.Text.Json namespace that causes commas meant for the value that was just written to be serialized at the end of the comment intended for the next JSON property. It is still highly readable and has no impact on the validity of the serialized JSONC. When Microsoft updates the library to fix this behavior, I will release a new version.</PackageReleaseNotes>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <Company>iAm9001</Company>
+        <ApplicationIcon>CC2JSONC-transparent.ico</ApplicationIcon>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="CC2JSONC-transparent.ico" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="GitVersion.MsBuild" Version="5.11.1">
