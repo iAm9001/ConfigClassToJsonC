@@ -17,6 +17,12 @@
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <Company>iAm9001</Company>
         <ApplicationIcon>CC2JSONC-transparent.ico</ApplicationIcon>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <DevelopmentDependency>true</DevelopmentDependency>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\ConfigClassToJsonC.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
