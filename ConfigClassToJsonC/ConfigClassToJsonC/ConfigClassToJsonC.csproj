@@ -3,6 +3,19 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>latest</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>ConfigClassToJsonC</Title>
+        <Authors>iAm9001</Authors>
+        <Description>library can be used to take any C# class (but specifically with configuration style classes in mind) and export it to a JSON string, along with it's XmlDoc output to the JSON file along with it. This is useful for creating ad-hoc documentation for your config files for when other people need to make modifications to them.</Description>
+        <Copyright>(C)2022 iAm9001</Copyright>
+        <PackageProjectUrl>https://github.com/iAm9001/ConfigClassToJsonC</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/iAm9001/ConfigClassToJsonC/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageIcon>CC2JSONC-transparent.ico</PackageIcon>
+        <RepositoryUrl>https://github.com/iAm9001/ConfigClassToJsonC</RepositoryUrl>
+        <PackageTags>json, jsonc, documentation, xmldoc,poco, configuration, configuration documentation, source docs, comments, source comments, serializer, json with comments</PackageTags>
+        <PackageReleaseNotes>This is the first release, and may be the only release. There is a formatting issue inherint to the System.Text.Json namespace that causes commas meant for the value that was just written to be serialized at the end of the comment intended for the next JSON property. It is still highly readable and has no impact on the validity of the serialized JSONC. When Microsoft updates the library to fix this behavior, I will release a new version.</PackageReleaseNotes>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <Company>iAm9001</Company>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,6 +25,13 @@
       </PackageReference>
       <PackageReference Include="Namotion.Reflection" Version="2.1.1" />
       <PackageReference Include="System.Text.Json" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="CC2JSONC-transparent.ico">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
     </ItemGroup>
 
 </Project>
