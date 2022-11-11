@@ -1,0 +1,17 @@
+<Project>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release-Sign' ">
+        <TargetsTriggeredByCompilation>$(SignIntermediateAssembly);SignIntermediateAssembly</TargetsTriggeredByCompilation>
+    </PropertyGroup>
+
+    <Target Name="SignIntermediateAssembly">
+        <Exec Command="signtool.exe sign /a /fd SHA256 /td SHA256 /tr http://timestamp.sectigo.com?td=sha256  &quot;%(IntermediateAssembly.FullPath)&quot;" ContinueOnError="false" Timeout="60000" YieldDuringToolExecution="false"/>
+    </Target>
+
+    <Target Name="SignPublishedSingleFileBundle" AfterTargets="BundlePublishDirectory">
+        <Exec Command="signtool.exe sign /a /fd SHA256 /td SHA256 /tr http://timestamp.sectigo.com?td=sha256 &quot;$(PublishedSingleFilePath)&quot;" ContinueOnError="false" Timeout="60000" YieldDuringToolExecution="false"/>
+    </Target>
+
+    <Target Name="Sign" AfterTargets="Pack" Condition=" '$(Configuration)' == 'Release-Sign' ">
+        <Exec Command="nuget.exe sign &quot;$(MSBuildProjectDirectory)\$(BaseOutputPath)$(Configuration)\$(PackageId).$(PackageVersion).nupkg&quot; -Timestamper http://timestamp.sectigo.com?td=sha256 -CertificateStoreLocation CurrentUser -CertificateStoreName My -CertificateFingerprint 02733854c3dedf9d780872401bbf0731db85c3ff"/>
+    </Target>
+</Project>
