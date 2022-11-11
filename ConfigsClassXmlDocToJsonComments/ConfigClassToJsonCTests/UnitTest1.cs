@@ -1,4 +1,4 @@
-namespace ConfigsClassXmlDocToJsonCommentsTests;
+namespace ConfigClassToJsonCTests;
 
 public class Tests
 {

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigClassToJsonCTests", "ConfigClassToJsonCTests\ConfigClassToJsonCTests.csproj", "{E0702F95-8B98-4572-B14B-A6DC8349FB97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigClassToJsonC", "ConfigClassToJsonC\ConfigClassToJsonC.csproj", "{AF38155C-D654-4138-86C8-46F4FFBF4FBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0702F95-8B98-4572-B14B-A6DC8349FB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0702F95-8B98-4572-B14B-A6DC8349FB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0702F95-8B98-4572-B14B-A6DC8349FB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0702F95-8B98-4572-B14B-A6DC8349FB97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF38155C-D654-4138-86C8-46F4FFBF4FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF38155C-D654-4138-86C8-46F4FFBF4FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF38155C-D654-4138-86C8-46F4FFBF4FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF38155C-D654-4138-86C8-46F4FFBF4FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
