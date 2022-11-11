@@ -17,7 +17,7 @@
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <Company>iAm9001</Company>
         <ApplicationIcon>CC2JSONC-transparent.ico</ApplicationIcon>
-        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <IncludeBuildOutput>true</IncludeBuildOutput>
         <DevelopmentDependency>true</DevelopmentDependency>
         <Configurations>Debug;Release;Release-Sign</Configurations>
         <Platforms>AnyCPU</Platforms>
