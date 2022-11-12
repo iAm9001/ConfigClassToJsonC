@@ -20,7 +20,6 @@
         <DevelopmentDependency>false</DevelopmentDependency>
         <Configurations>Debug;Release;Release-Sign</Configurations>
         <Platforms>AnyCPU</Platforms>
-        <PackageLicenseUrl>https://github.com/iAm9001/ConfigClassToJsonC/blob/main/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
