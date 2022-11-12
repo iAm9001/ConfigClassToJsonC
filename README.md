@@ -85,7 +85,7 @@ var configWithDocumentation = new ConfigurationClassDocumentedExample()
 string jsonOutput = configWithDocumentation.SerializeObjectWithComments();
 ```
 ##### Output JSONC String (yes, I know it isn't real JSON, it has comments, but this is perfectly acceptable for .NET configuration files!)
-```JSONC
+```JSON
 {
   /*This configuration class represents all of the required properties to create
 this super example configuration object, along with it's documentation (for some things).
