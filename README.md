@@ -5,7 +5,7 @@ This library can be used to take any C# class (but specifically with configurati
 This C# class will be used for demonstration purposes. Two examples below demonstrate how an object
 of this type is serialized using the standard techniques, and how it is serialized when using the
 library's extension method.
-```
+```C#
 /// <summary>
 /// This configuration class represents all of the required properties to create
 /// this super example configuration object, along with it's documentation (for some things).
@@ -41,7 +41,7 @@ public class ConfigurationClassDocumentedExample
 
 #### Old Way:
 ##### Serialized using this standard technique
-```
+```C#
 var configWithDocumentation = new ConfigurationClassDocumentedExample()
             {
                 Active = true,
@@ -60,7 +60,7 @@ var options = new JsonSerializerOptions()
 string jsonOutput = JsonSerializer.Serialize(configWithDocumentation, options);
 ```
 ##### Output JSON String (notice it is not very helpful in describing the property meanings)
-```
+```JSON
 {
   "ConfigurationClassUndocumentedExample": {
     "LocalPathSomeFile": "c:\\Somewhere\\Somehow.txt",
@@ -73,7 +73,7 @@ string jsonOutput = JsonSerializer.Serialize(configWithDocumentation, options);
 
 #### New Way (serializing to JSONC (JSON with Comments))
 ##### Serialized using the SerializeWithComments extension method technique
-```
+```C#
 var configWithDocumentation = new ConfigurationClassDocumentedExample()
             {
                 Active = true,
@@ -85,7 +85,7 @@ var configWithDocumentation = new ConfigurationClassDocumentedExample()
 string jsonOutput = configWithDocumentation.SerializeObjectWithComments();
 ```
 ##### Output JSONC String (yes, I know it isn't real JSON, it has comments, but this is perfectly acceptable for .NET configuration files!)
-```
+```JSONC
 {
   /*This configuration class represents all of the required properties to create
 this super example configuration object, along with it's documentation (for some things).
